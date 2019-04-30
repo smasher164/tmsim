@@ -1,0 +1,28 @@
+# Ignore everythin
+*
+# Whitelist subdirectories
+!*/
+
+# Whitelist the following extensions
+!*.go
+!*.md
+!.gitignore
+!*.css
+!*.eot
+!*.otf
+!*.svg
+!*.ttf
+!*.woff
+!*.woff2
+!*.service
+!*.sh
+!Dockerfile
+!Makefile
+!*.toml
+!*.java
+!*.tm
+!*.tex
+!*.pdf
+!*.png
+!*.zip
+!*.jar
