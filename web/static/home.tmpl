@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+    <link rel="manifest" href="/static/site.webmanifest">
+    <link href="/static/main.css" rel="stylesheet">
+    <title>Turing Machine Simulator</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Turing Machine Simulator</a></h1>
+    </header>
+    <main>
+        <control>
+            <button id="btn-run" class="btn-ctrl">Run</button>
+            <button id="btn-stop" class="btn-ctrl">Stop</button>
+            <button id="btn-step" class="btn-ctrl">Step</button>
+            <label for="in-ip">Instruction</label>
+            <input type="number" id="in-ip" class="input-ctrl" value="0"></input>
+            <label for="in-inp">Read Head</label>
+            <input type="number" id="in-inp" class="input-ctrl" value="0"></input>
+            <label for="in-tape">Tape</label>
+            <input type="text" id="in-tape" class="input-ctrl" placeholder="abc"></input>
+        </control>
+        <tape>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </tape>
+        <editor-frame>
+            <line-numbers>
+                <div>0</div>
+            </line-numbers>
+            <textarea wrap=off placeholder="PROGRAM"></textarea>
+        </editor-frame>
+    </main>
+    <footer>
+        Copyright © 2019 Akhil Indurti
+    </footer>
+    <error>
+        <pre id="message"></pre>
+        <button id="btn-err">Dismiss</button>
+    </error>
+    <script src="/static/main.js"></script>
+</body>
+</html>
